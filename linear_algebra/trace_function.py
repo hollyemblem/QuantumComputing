@@ -19,7 +19,7 @@ print(np.trace(np.matmul(pauli_x, pauli_z)))
 print(np.trace(np.matmul(pauli_z, pauli_x)))
 
 '''Let A and B denote two linear operators and a is ∈ C . Show that 
-tr(a.A  + B)  = α.trA()  + trB()
+tr(α.A  + B)  = α.trA()  + trB()
 '''
 
 matrix_a = np.array([[3,5], [1,2]])
