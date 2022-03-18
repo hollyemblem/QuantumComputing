@@ -32,3 +32,13 @@ tensor_product_transpose_2 = np.transpose(tensor_product_2)
 
 #Multiply the tensor product by its tranpose and check if an identity matrix.
 print(np.matmul(tensor_product_transpose_2, tensor_product_2))
+
+'''Show that the tensor product of two hermitian operators is hermitian'''
+
+'''A hermitian operator has the property that A = A^*'''
+
+pauli_x_tranpose = np.transpose(pauli_x)
+
+print(pauli_x)
+print(pauli_x_tranpose)
+print(np.array_equal(pauli_x_tranpose,pauli_x))
