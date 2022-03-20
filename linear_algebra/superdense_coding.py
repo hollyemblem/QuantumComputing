@@ -30,7 +30,7 @@ import numpy as np
 zero = [[1],[0]]
 zero_zero = (np.kron(zero,zero))
 hadamard = np.array([[1,1], [1,-1]]) * 1/np.sqrt(2)
-q0 = (zero_zero[0:2])  #Separate out the first qubit.
+q0 = (zero)  #Separate out the first qubit.
 #Apply the hadamard matrix to the first qubit.
 hadamard_q0 = ((np.matmul(hadamard,q0))) 
 
@@ -91,7 +91,7 @@ print(decrypt_cnot_output)
 
 one_one = [[1],[1]] * 1/np.sqrt(2)
 verifying_output = (np.kron(one_one,zero)) 
-print(verifying_output)
+print(f'This is the output we expected \n {verifying_output} this should also match \n {decrypt_cnot_output}')
 
 ##We can exploit the fact that this is equivalent to apply a hadamard gate to the first qubit.
 ##For ease, we have used one_one as our first qubit, as we have proved it is equivalent to our cnot output.
