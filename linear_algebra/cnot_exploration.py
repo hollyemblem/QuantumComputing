@@ -3,6 +3,10 @@ import numpy as np
 #Create cnot matrix
 cnot = np.array([[1,0,0,0], [0,1,0,0], [0,0,0,1], [0,0,1,0]]) 
 
+array = np.array([[0],[0],[0],[1]])
+
+print(np.matmul(cnot, array))
+
 #Take adjoint. Not strictly true as not taking conjugate transpose
 cnot_adjoint = cnot.transpose()
 
